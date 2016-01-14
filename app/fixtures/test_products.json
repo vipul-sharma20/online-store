@@ -1,0 +1,14 @@
+[
+  {
+    "model": "app.product",
+    "pk": 1,
+    "fields": {
+      "name": "Bat Mobile",
+      "description": "Black Batmobile",
+      "price": 200,
+      "category": "Automobile",
+      "owner": 1,
+      "created": "2016-01-14T18:05:36.359Z"
+    }
+  }
+]

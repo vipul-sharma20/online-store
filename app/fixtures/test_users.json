@@ -1,0 +1,20 @@
+[
+{
+    "fields": {
+        "username": "bruce",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$C4D1wCqNoqNt$XXh8eYuEhJEbhZlno3Fqoi5e+bGgTIj5QKFEIKFSZfc=",
+        "email": "bruce@wayne.org",
+        "date_joined": "2016-01-14T17:04:28.227Z"
+    },
+    "model": "auth.user",
+    "pk": 1
+}
+]
