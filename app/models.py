@@ -20,7 +20,7 @@ class Product(models.Model):
     """
     owner = models.ForeignKey('auth.User', related_name='products')
     created = models.DateTimeField(auto_now_add=True)
-    name = models.CharField(max_length=100, blank=False, default='')
+    name = models.CharField(max_length=100, blank=False)
     description = models.TextField(blank=True)
     price = models.IntegerField(blank=False)
     category = models.CharField(max_length=20, blank=True, default='')

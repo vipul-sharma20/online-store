@@ -1,0 +1,38 @@
+[
+  {
+    "model": "app.product",
+    "pk": 1,
+    "fields": {
+      "name": "Bat Mobile",
+      "description": "Black Batmobile",
+      "price": 200,
+      "category": "Automobile",
+      "owner": 1,
+      "created": "2016-01-14T18:05:36.359Z"
+    }
+  },
+  {
+    "model": "app.product",
+    "pk": 2,
+    "fields": {
+      "name": "Bat",
+      "description": "Black airplane, can easily manoeuvre",
+      "price": 100,
+      "category": "Automobile",
+      "owner": 2,
+      "created": "2016-01-14T18:04:36.359Z"
+    }
+  },
+  {
+    "model": "app.product",
+    "pk": 3,
+    "fields": {
+      "name": "Wayne Manor",
+      "description": "Scaled building",
+      "price": 100,
+      "category": "Home Decor",
+      "owner": 1,
+      "created": "2016-01-14T18:03:36.359Z"
+    }
+  }
+]
