@@ -10,8 +10,6 @@ How to run?
 * `cd online-store`
 * `sudo pip install virtualenv`
      * Python 2.7.9 and later (on the python2 series), and Python 3.4 and later include pip by default, so you may have pip already.
-            
-                                  OR
      * If you don't have pip installed, visit here to see steps to install virtualenv: [https://virtualenv.readthedocs.org/en/latest/installation.html](https://virtualenv.readthedocs.org/en/latest/installation.html)
 * `virtualenv store`
 * `source store/bin/activate`
@@ -20,13 +18,13 @@ How to run?
      * It will prompt to create a new user type "yes" and add give a username, email and password. This will be one of the user which we can use to try our API.
 * (Optional but recommended) Load database with some initial data as fixtures (these are files inside app/fixtures:
      * `python manage.py loaddata users` 
-        * will load 2 dummy users with usernames: _bruce_, _alfred_ and passoword: _testpass_
+        * will load 2 dummy users with usernames: _bruce_, _alfred_ and password: _testpass_
      * `python manage.py loaddata products` (will load a product list)
 * `python manage.py runserver` This will run the application on [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 API Requests
 ------------
-We can make GET, POST, PUT, DELETE requests using httpie which would be already installed if the requirements installation process is successful.
+We can make GET, POST, PUT, DELETE requests using httpie which would be already installed if the requirements installation process was successful.
 
 Example: a simple request using httpie `http http://127.0.0.1:8000/`
 
@@ -50,7 +48,7 @@ suppose the token for user _bruce_ is `c13a415a575338f7384d248934ad5e31ab957ab3`
 
 * `http GET http://127.0.0.1:8000/products/ 'Authorization: Token c13a415a575338f7384d248934ad5e31ab957ab3'`
 
-    [
+     [
         {
             "category": "Home Decor",
             "description": "Scaled building",
@@ -78,18 +76,18 @@ suppose the token for user _bruce_ is `c13a415a575338f7384d248934ad5e31ab957ab3`
             "owner": "vipul",
             "price": 200
         }
-    ]
+     ]
 
 ### POST (Create) ###
 Adding a new item:
-* `http -a alfred:testpass POST 127.0.0.1:8000/products/ name="product1" price=200`
+* `http -a alfred:testpass POST http://127.0.0.1:8000/products/ name="product1" price=200`
 
 OR
 * `http POST http://127.0.0.1:8000/products/ name="product1" price=200 'Authorization: Token c13a415a575338f7384d248934ad5e31ab957ab3'`
 
 ### PUT (Update) ###
 Update an existing item:
-* `http -a bruce:testpass PUT 127.0.0.1:8000/products/2/ name="UpdatedProduct" price=200`
+* `http -a bruce:testpass PUT http://127.0.0.1:8000/products/2/ name="UpdatedProduct" price=200`
 
 OR
 * `http PUT http://127.0.0.1:8000/products/2/ name="UpdatedProduct" price=200 'Authorization: Token c13a415a575338f7384d248934ad5e31ab957ab3'`
@@ -98,7 +96,7 @@ if the user is authenticated and is the owner of the product entry, then it will
 
 ### DELETE (Remove) ###
 Remove an item:
-* `http -a vipul:testpass DELETE 127.0.0.1:8000/products/1/`
+* `http -a vipul:testpass DELETE http://127.0.0.1:8000/products/1/`
 
 OR
 * `http DELETE http://127.0.0.1:8000/products/1/ 'Authorization: Token c13a415a575338f7384d248934ad5e31ab957ab3'`
@@ -107,7 +105,7 @@ if the user is authenticated and is the owner of the product entry, then it will
 
 ### GET (Search) ###
 Search an item using query parameter `q`
-* `http -a alfred:testpass GET 127.0.0.1:8000/products/?q="bat"`
+* `http -a alfred:testpass GET http://127.0.0.1:8000/products/?q="bat"`
 
 OR
 
