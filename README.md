@@ -22,6 +22,14 @@ How to run?
      * `python manage.py loaddata products` (will load a product list)
 * `python manage.py runserver` This will run the application on [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
+Test
+----
+* Test the code by `python manage.py test`
+* Tests are written in `app/tests.py`
+* You can also change the verbosity of the test output using `-v`
+    * `python manage.py test -v3` will give the most verbose output of the tests _(other options: v0, v1, v2)_
+
+
 API Requests
 ------------
 We can make GET, POST, PUT, DELETE requests using httpie which would be already installed if the requirements installation process was successful.
@@ -48,14 +56,16 @@ suppose the token for user _bruce_ is `c13a415a575338f7384d248934ad5e31ab957ab3`
 
 * `http GET http://127.0.0.1:8000/products/ 'Authorization: Token c13a415a575338f7384d248934ad5e31ab957ab3'`
 
-     [
+Example:
+
+    [
         {
             "category": "Home Decor",
             "description": "Scaled building",
             "id": 3,
             "image": "",
             "name": "Wayne Manor",
-            "owner": "vipul",
+            "owner": "alfred",
             "price": 100
         },
         {
@@ -73,10 +83,10 @@ suppose the token for user _bruce_ is `c13a415a575338f7384d248934ad5e31ab957ab3`
             "id": 1,
             "image": "",
             "name": "Bat Mobile",
-            "owner": "vipul",
+            "owner": "bruce",
             "price": 200
         }
-     ]
+    ]
 
 ### POST (Create) ###
 Adding a new item:
@@ -96,7 +106,7 @@ if the user is authenticated and is the owner of the product entry, then it will
 
 ### DELETE (Remove) ###
 Remove an item:
-* `http -a vipul:testpass DELETE http://127.0.0.1:8000/products/1/`
+* `http -a alfred:testpass DELETE http://127.0.0.1:8000/products/1/`
 
 OR
 * `http DELETE http://127.0.0.1:8000/products/1/ 'Authorization: Token c13a415a575338f7384d248934ad5e31ab957ab3'`
@@ -130,7 +140,7 @@ Example:
             "id": 1,
             "image": "",
             "name": "Bat Mobile",
-            "owner": "vipul",
+            "owner": "bruce",
             "price": 200
         }
     ]
@@ -145,8 +155,8 @@ Examples:
 * `http -a bruce:testpass GET https://pure-caverns-3351.herokuapp.com/products/`
 * `http -a bruce:testpass POST https://pure-caverns-3351.herokuapp.com/products/ name="Product1" price=500`
 * `http -a bruce:testpass GET https://pure-caverns-3351.herokuapp.com/products/?q="bat"`
-* `http -a bruce:testpass PUT https://pure-caverns-3351.herokuapp.com/products/1/ name="ChangedName" price="100"`
-* `http -a bruce:testpass DELETE https://pure-caverns-3351.herokuapp.com/products/1/`
+* `http -a alfred:testpass PUT https://pure-caverns-3351.herokuapp.com/products/1/ name="ChangedName" price="100"`
+* `http -a alfred:testpass DELETE https://pure-caverns-3351.herokuapp.com/products/1/`
 
 The live demo already has some data loaded and 2 users:
 * username: _bruce_ password: _testpass_
