@@ -3,7 +3,7 @@ online-store
 
 REST API built in Django/Python for managing products of an online store
 live demo at: [https://pure-caverns-3351.herokuapp.com/](https://pure-caverns-3351.herokuapp.com/)
-Make requests on this link, scroll to bottom for more details on the live demo.
+see bottom of this document for more details on the live demo.
 
 How to run?
 ------------
@@ -148,7 +148,7 @@ Example:
 
 LIVE DEMO
 =========
-* Try the web browsable REST API at: [https://pure-caverns-3351.herokuapp.com/](https://pure-caverns-3351.herokuapp.com/) _(see login credentials at the bottom)_
+* Try the web browsable REST API at: [https://pure-caverns-3351.herokuapp.com/](https://pure-caverns-3351.herokuapp.com/) _(see login credentials at the bottom)_. First login and then try playing with the requests in the address bar.
 * Try making requests as explained earlier in the shell using httpie on [https://pure-caverns-3351.herokuapp.com/](https://pure-caverns-3351.herokuapp.com/)
 
 Examples: 
@@ -156,8 +156,8 @@ Examples:
 * `http -a bruce:testpass GET https://pure-caverns-3351.herokuapp.com/products/`
 * `http -a bruce:testpass POST https://pure-caverns-3351.herokuapp.com/products/ name="Product1" price=500`
 * `http -a bruce:testpass GET https://pure-caverns-3351.herokuapp.com/products/?q="bat"`
-* `http -a alfred:testpass PUT https://pure-caverns-3351.herokuapp.com/products/1/ name="ChangedName" price="100"`
-* `http -a alfred:testpass DELETE https://pure-caverns-3351.herokuapp.com/products/1/`
+* `http -a alfred:testpass PUT https://pure-caverns-3351.herokuapp.com/products/3/ name="ChangedName" price="100"`
+* `http -a alfred:testpass DELETE https://pure-caverns-3351.herokuapp.com/products/3/`
 
 The live demo already has some data loaded and 2 users:
 * username: _bruce_ password: _testpass_
