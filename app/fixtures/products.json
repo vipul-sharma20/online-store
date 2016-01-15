@@ -7,7 +7,7 @@
       "description": "Black Batmobile",
       "price": 200,
       "category": "Automobile",
-      "owner": 1,
+      "owner": 2,
       "created": "2016-01-14T18:05:36.359Z"
     }
   },
@@ -31,7 +31,7 @@
       "description": "Scaled building",
       "price": 100,
       "category": "Home Decor",
-      "owner": 1,
+      "owner": 3,
       "created": "2016-01-14T18:03:36.359Z"
     }
   }

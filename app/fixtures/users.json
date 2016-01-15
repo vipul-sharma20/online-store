@@ -1,24 +1,6 @@
 [
 {
     "fields": {
-        "username": "vipul",
-        "first_name": "",
-        "last_name": "",
-        "is_active": true,
-        "is_superuser": true,
-        "is_staff": true,
-        "last_login": null,
-        "groups": [],
-        "user_permissions": [],
-        "password": "pbkdf2_sha256$20000$85GLJYDaFZaG$R49JhsrWoYMV3Rum63Qatkfijku7EymZLZCpPG06/MQ=",
-        "email": "",
-        "date_joined": "2016-01-14T23:39:34.072Z"
-    },
-    "model": "auth.user",
-    "pk": 1
-},
-{
-    "fields": {
         "username": "bruce",
         "first_name": "",
         "last_name": "",
@@ -28,11 +10,29 @@
         "last_login": null,
         "groups": [],
         "user_permissions": [],
-        "password": "pbkdf2_sha256$20000$C4D1wCqNoqNt$XXh8eYuEhJEbhZlno3Fqoi5e+bGgTIj5QKFEIKFSZfc=",
-        "email": "bruce@wayne.org",
-        "date_joined": "2016-01-14T17:04:28.227Z"
+        "password": "pbkdf2_sha256$20000$nZNQaga69ZmP$N85+joPghjk7VB6TnghiQkc1o43MvBQVuUpd8w/o9jc=",
+        "email": "",
+        "date_joined": "2016-01-15T01:39:39.699Z"
     },
     "model": "auth.user",
     "pk": 2
+},
+{
+    "fields": {
+        "username": "alfred",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$jUWdXzlzhWMd$s2DpWeDNUtuWkFMU0vgN64Uc6UEu5v64q6kt4aaTztg=",
+        "email": "",
+        "date_joined": "2016-01-15T01:39:55.189Z"
+    },
+    "model": "auth.user",
+    "pk": 3
 }
 ]
