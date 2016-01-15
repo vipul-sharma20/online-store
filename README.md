@@ -3,6 +3,7 @@ online-store
 
 REST API built in Django/Python for managing products of an online store
 live demo at: [https://pure-caverns-3351.herokuapp.com/](https://pure-caverns-3351.herokuapp.com/)
+Make requests on this link, scroll to bottom for more details on the live demo.
 
 How to run?
 ------------
